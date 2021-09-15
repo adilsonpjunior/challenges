@@ -1,1 +1,0 @@
-console.log("Trecho para exibicao em pagina html como script")
