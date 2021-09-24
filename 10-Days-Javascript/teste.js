@@ -1,11 +1,8 @@
-const score = 11;
-let grade;
+const teste = [1,2,3,,14,35,52,5,46,4,63,6,36,34];
 
-    if (score <= 5) { grade = 'F' }
-    else if (score <= 10) { grade = 'E' }
-    else if (score <= 15) { grade = 'D' }
-    else if (score <= 20) { grade = 'C' }
-    else if (score <= 25) { grade = 'B' }
-    else if (score <= 30) { grade = 'A' }
+console.log(teste.slice(-1));
 
-    console.log(grade);
+let primeiro = teste[1]
+let ultimo = teste.slice(-1)
+
+console.log(primeiro, ultimo[0]);
