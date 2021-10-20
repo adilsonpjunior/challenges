@@ -1,8 +1,22 @@
-const teste = [1,2,3,,14,35,52,5,46,4,63,6,36,34];
+function getDayName(dateString) {
+  //let dataArray = dateString.split("/");
+  //let data = new Date(dataArray[2], dataArray[0] - 1, dataArray[1]);
+  const data = new Date(dateString);
+  let dayName;
+  // Write your code here
+  const diasSemana = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
 
-console.log(teste.slice(-1));
+  dayName = diasSemana[data.getDay()];
 
-let primeiro = teste[1]
-let ultimo = teste.slice(-1)
+  return dayName;
+}
 
-console.log(primeiro, ultimo[0]);
+console.log(getDayName("10/20/2021"));
