@@ -1,22 +1,16 @@
-function getDayName(dateString) {
-  //let dataArray = dateString.split("/");
-  //let data = new Date(dataArray[2], dataArray[0] - 1, dataArray[1]);
-  const data = new Date(dateString);
-  let dayName;
-  // Write your code here
-  const diasSemana = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
+function reverseString(s) {
 
-  dayName = diasSemana[data.getDay()];
+    try {
 
-  return dayName;
+        console.log(s.split("").reverse().join(""));
+        
+    } catch (error) {
+
+        console.log('s.split is not a function');
+        console.log(s);
+        
+    }
+    
 }
 
-console.log(getDayName("10/20/2021"));
+reverseString('1234');
