@@ -1,16 +1,17 @@
-function reverseString(s) {
-
-    try {
-
-        console.log(s.split("").reverse().join(""));
-        
-    } catch (error) {
-
-        console.log('s.split is not a function');
-        console.log(s);
-        
+function isPositive(a) {
+    if (a > 0)
+    {
+        throw "YES";
+    }
+    else if (a == 0)
+    {
+        throw "Zero Error";
+    }
+    else
+    {
+        throw "Negative Error";
     }
     
-}
+};
 
-reverseString('1234');
+isPositive(-20);
